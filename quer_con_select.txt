@@ -23,4 +23,4 @@ laurea (286)
 
 7)SELECT `id` FROM `departments`;
 
-8)SELECT * FROM `teachers` WHERE `phone` IS NULL;
+8)SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL 
