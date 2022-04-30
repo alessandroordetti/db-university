@@ -10,11 +10,10 @@ superare ciascuno dei suoi esami
 
 1) SELECT * FROM `students` INNER JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` WHERE `degrees`.`name` = "Corso di Laurea in Economia";
 
-2) SELECT * 
-FROM `courses` 
-JOIN `degrees` ON `courses`.`degree_id` = `courses`.`degree_id`
-JOIN `departments`ON `degrees`.`id` = `departments`.`id`
-WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
+2) SELECT `departments`.`name`, `degrees`.`name`  
+FROM `degrees`
+JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze'
 
 3) SELECT DISTINCT * 
 FROM `teachers` 
